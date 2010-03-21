@@ -24,6 +24,7 @@ void Init_RC(void)
 byte RC_detector(void)
 {
 float average_ch1=0;
+delay(1000); //Wait for receiver to settle...
 
 for(int c=0; c<=10; c++)
 {
